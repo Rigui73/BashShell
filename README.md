@@ -32,11 +32,11 @@ vim .vimrc
 Dentro del fichero de configuración añadimos las siguientes líneas:
 
 ```bash
-set showmode #
-set autoindent #auto indenta el fichero
-set tabstop = 4 # medida de los [tab]
-set expandtab #
-syntax on #
+set showmode # mostrar lo que hacemos en las operaciones.
+set autoindent # soporte de autoindentación.
+set tabstop = 4 # medida de los [TAB].
+set expandtab # cada golpe de linea se expanda al parametro mencionado.
+syntax on # colorear la syntax del editor.
 ```
 
 ## Vídeo 4 - 5: Crear y ejecutar el primer script
@@ -59,9 +59,7 @@ vim 1_utilityPostgres.sh
 Editamos el archivo para escribir en él.
 
 ```bash
-# !/bin/bash
-# Programa para realizar algunas operaciones utilitarios de Postgres
-
+#!/bin/bash
 echo "Hola Mundo"
 ```
 
@@ -83,16 +81,20 @@ bash archivo.sh
 
 ## Vídeo 6: Declaración de variables
 
-/etc/profile
+dos tipos de variables
 
-USUARIO DE SUPERUSUARIO
+VARIABLE DE ENTORNO S.O
+/etc/profile
 
 ```bash
 # VARIABLE DE ENTORNO S.O
-
-COURSE_NAME=Programacion Bash
+COURSE_NAME=ProgramaciónBash
 export COURSE_NAME
 ```
+
+VARIABLES DE USUARIO.
+
+Creamos el segundo fichero de prácticas.
 
 ```bash
 vim 2_variables.sh
@@ -100,47 +102,32 @@ vim 2_variables.sh
 
 ```bash
 #!/bin/bash
-# revisar declaracion de variables
-opcion = 0
-nombre = Marco
-
-echo "Opción $opcion y nombre: $nombre"
-```
-
-chmod +x 2_variables.sh
-
-```bash
-#!/bin/bash
-# revisar declaracion de variables
-opcion = 0
-nombre = Marco
-
-echo "Opción $opcion y nombre: $nombre"
-
+opcion=0
+nombre=Adria
+echo "Opción: $opcion Nombre: $nombre"
 # exportar la variable nombre para que este disponible a los demas procesos
 export nombre
 # llamar al script
-./2variable.sh
+./2_variables_2.sh
 ```
 
 ## Video 7: tipos de operadores
 
-3_tipoOperadores.sh
-chmod +x
+```bash
+vim 3_tipoOperadores.sh
+```
 
 ```bash
 # !/bin/bash
-# programa para revisar los tipos de operadores
-# Autor: Adria Rigall - contacto@adriarigall.com
-numA = 10
-numB = 4
+numA=10
+numB=4
 echo "Números: A= $numA y B= $numB"
 
 echo "Operadores Aritméticos"
-echo "Sumar A + B =" $((numA + numB))
-echo "Restar A - B =" $((numA - numB))
-echo "Multiplicar A + B =" $((numA * numB))
-echo "Dividir A / B =" $((numA / numB))
+echo "A + B =" $((numA + numB))
+echo "A - B =" $((numA - numB))
+echo "A _ B =" $((numA _ numB))
+echo "A / B =" $((numA / numB))
 
 echo "Operadores Relacionales"
 echo "A < B =" $((numA < numB))
@@ -151,11 +138,11 @@ echo "A == B =" $((numA == numB))
 echo "A != B =" $((numA != numB))
 
 echo "Operadores de Asignación"
-echo "Sumar A += B =" $((numA + numB))
-echo "Restar A -= B =" $((numA + numB))
-echo "Multiplicar A *= B =" $((numA + numB))
-echo "Dividir A /= B =" $((numA + numB))
-echo "Residuo A %= B =" $((numA + numB))
+echo "A += B =" $((numA += numB))
+echo "A -= B =" $((numA -= numB))
+echo "A _= B =" $((numA _= numB))
+echo "A /= B =" $((numA /= numB))
+echo "A %= B =" $((numA %= numB))
 ```
 
 ## Video 8: Argumentos de scripts
@@ -164,14 +151,12 @@ vim 4_argumentos.sh
 
 ```bash
 #!/bin/bash
-# programa para simplificar el paso de argumentos
-#autor: adria rigall - contacto@adriarigall.com
-
 nombreCurso=$1
-horariocurso=$2
-
-echo "El nombre del curso es: $nombrecurso dictado en el horario de $horariocurso"
+horarioCurso=$2
+echo "El nombre del curso es: $nombreCurso dictado en el horario de $horarioCurso"
 ```
+
+Para dar los argumentos al script los mencionamos junto el nombre de archivo.
 
 ```bash
 ./4_argumentos.sh "argumento1" "argumento2"
@@ -180,11 +165,13 @@ echo "El nombre del curso es: $nombrecurso dictado en el horario de $horariocurs
 ## Video 9: Comandos en variables
 
 5_substitucionComand
-ubicacionActual=pwd
-infoKernel = \$(uname -a)
 
-echo "la ubicacion actual es la siguiente: $ubicacionactual"
-echo "informacion del kernel es: $infoKernel"
+```bash
+ubicacionActual=`pwd`
+infoKernel=$(uname -a)
+echo "La ubicación actual es la siguiente: $ubicacionActual"
+echo "La información del Kernel es: $infoKernel"
+```
 
 ## Video 10: Debug en script
 
@@ -194,26 +181,24 @@ bash -x archivo.sh ver cuando es salida y entrada
 
 ## Video 11: RETO 1
 
-Desarrollar un programa llamado utilityHost.sh, dentro de él vamos a declarar dos variables una llamada option, otra llamada result, vamos a inicializarles e imprimir sus valores.
+>Desarrollar un programa llamado utilityHost.sh, dentro de él vamos a declarar dos variables una llamada option, otra llamada result, vamos a inicializarles e imprimir sus valores.
 
 ## Video 12: Capturar informacion usuario
 
 6_readEcho.sh
 
 ```bash
-# !/bin/bash
-
 option=0
-backupName = ""
+backupName=""
 
-echo "programa Utilidades Postgres"
-echo -n "ingresar una opción:"
+echo "Programa Utilidades Postgres"
+echo -n "Ingresar una opción:"
 read
 option=$REPLY
 echo -n "Ingresar el nombre del archivo del backup:"
 read
 backupName=$REPLY
-echo "Opción:$opcion , backupName:$backupName"
+echo "Opción:$option , backupName:$backupName"
 ```
 
 7_read.sh
@@ -227,7 +212,7 @@ backupName = ""
 echo "programa Utilidades Postgres"
 read -p "ingresar una opción:" option
 read -p "Ingresar el nombre del archivo del backup:" backupName
-echo "Opción:$opcion , backupName:$backupName"
+echo "Opción:$option , backupName:$backupName"
 ```
 
 ## Video 13: Expresiones Regulares
