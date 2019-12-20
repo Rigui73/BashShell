@@ -215,4 +215,10 @@ read -p "Ingresar el nombre del archivo del backup:" backupName
 echo "Opción:$option , backupName:$backupName"
 ```
 
-## Video 13: Expresiones Regulares
+## Video 18: If/Else
+
+Se utiliza (( $variable >= 18 ))
+Se utiliza [ $variable -le 18 ]
+
+## Video 19: If Anidados
+
