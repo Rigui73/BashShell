@@ -284,9 +284,21 @@ wget hhtps://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.
 
 >Solicitar la información de cada uno de ustedes como nombres, apellidos, edad, dirección y números telefónicos; y posterior imprima toda la información.
 
-## Video 18: If/Else
+## Video 18 i 19: If/Else
 
 Se utiliza (( $variable >= 18 ))
 Se utiliza [ $variable -le 18 ]
 
-## Video 19: If Anidados
+## Video 20: Expresiones Condicionales
+
+archivo.
+
+## video 21: Sentencias Case
+
+archivo.
+
+## Video 22: RETO 3
+
+>Solicitar que se ingrese un valor del 1 al 5. Según el valor ingresado valor a validarlo utilizando las condicionales e imprimir según el valor ingresado. Construir expresiones de validaciòn númericas, cadenas y archivos según la opción ingresada.
+
+## Video 23: no se
