@@ -1,5 +1,5 @@
 #!/bin/bash
-# Function: El primer "Hola Mundo" en programación Bash
+# Description: El primer "Hola Mundo" en programación Bash
 # Author: Adria Rigall - @rigui73
 
 echo "Hola Mundo"

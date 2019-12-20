@@ -1,5 +1,5 @@
 #!/bin/bash
-# Function: Revisar la declaración de variables
+# Description: Revisar la declaración de variables
 # Author: Adria Rigall - @rigui73
 
 opcion=0

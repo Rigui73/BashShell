@@ -1,5 +1,5 @@
 #!/bin/bash
-# Function: Programa para revisar los tipos de operadores
+# Description: Programa para revisar los tipos de operadores
 # Author: Adria Rigall - @rigui73
 
 numA=10

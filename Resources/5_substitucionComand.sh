@@ -1,5 +1,5 @@
 #!/bin/bash
-# Function: Programa para simplificar el paso de argumentos
+# Description: Programa para simplificar el paso de argumentos
 # Author: Adria Rigall - @rigui73
 
 ubicacionActual=`pwd`

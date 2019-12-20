@@ -216,3 +216,72 @@ echo "Opción:$option , backupName:$backupName"
 ```
 
 ## Video 13: Expresiones Regulares
+
+^.- Caracter que representa el inicio de la expresión regular.
+$.- Caracter que representa el final de la expresión regular.
+*.- Caracter que representa cero o más ocurrencias de la expresión
++.- Caracter que representa una o más ocurrencias de la expresión.
+{n}.-Representa n veces de una expresión.
+[ ] .- Representa un conjunto de caracteres, por ejemplo: [a-z] representa las letras del abecedario de la a a la z.
+
+Tomando en cuenta estos criterios se realizará un programa que valida la siguiente información:
+Número de Identificación de un tamaño de 10 números. Ejemplo: 1717836520
+identificacionRegex='^[0-9]{10}$'
+
+País de Origen denotado por dos letras en un rango específico. Ejemplo: EC, CO, US
+paísRegex='^EC|COL|US$'
+
+Fecha de Nacimiento en el formato yyyyMMDD. Ejemplo: 20181222
+fechaNacimientoRegex='^19|20[0-0]{2}[1-12][1-31]$'
+
+read -p "ingresa identificacion" identificacion
+read -p "ingresa las iniciales del pais [EC, CO, US]" pais
+read -p "ingresa la fecha de nacimiento yyyyMMdd" fechaNacimiento
+
+Luego se validará cada expresión regular comenzando con la identificación,
+
+```bash
+# validacion con identificacion
+if [[ $identificacion =~ $identificacionRegex ]]; then
+  echo "Pais $identificacion valido"
+else
+  echo "Pais $identificacion invalido"
+fi
+```
+
+## VIdeo 14: validar informacion
+
+```bash
+option=0
+backupName=""
+clave=""
+
+echo "programa utilidades postgres"
+#acepta el ingreso de un solo caracter
+read -n1 -p "ingresar una opcion:" option
+echo -e "\n"
+read -n10 -p "ingresar el nombre del archivo backup:" backupName
+echo -e "\n"
+read -s -p "Clave:" clave
+echo "Opción: $option , backupname: $backupName , Clave: \$clave"
+```
+
+## Video 15: Pasos de parametros y opciones
+
+envio de opciones vs parametros
+envio independiente
+envio complementario
+leer los valores
+
+## video 16: descarga informacion de internet
+
+```bash
+echo "descargar informacion de internet"
+wget hhtps://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.zip
+```
+
+## Video 17: RETO 2
+
+>Solicitar la información de cada uno de ustedes como nombres, apellidos, edad, dirección y números telefónicos; y posterior imprima toda la información.
+
+## Video 18: If/else
