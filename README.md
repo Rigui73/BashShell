@@ -284,4 +284,9 @@ wget hhtps://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.
 
 >Solicitar la información de cada uno de ustedes como nombres, apellidos, edad, dirección y números telefónicos; y posterior imprima toda la información.
 
-## Video 18: If/else
+## Video 18: If/Else
+
+Se utiliza (( $variable >= 18 ))
+Se utiliza [ $variable -le 18 ]
+
+## Video 19: If Anidados
