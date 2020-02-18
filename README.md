@@ -15,17 +15,17 @@ Este directorio me sirve para practicar la programación en Bash Shell. He abier
 
 - [DESCRIPCION](#descripcion)
 - [TABLA DE CONTENIDO](#tabla-de-contenido)
-  - [SYSTEM REQUIREMENTS](#system-requirements)
+  - [REQUISITOS DE SISTEMA](#requisitos-de-sistema)
 - [TEST](#test)
   - [SCREENSHOTS](#screenshots)
 - [AUTORES](#autores)
-- [CONTRIBUTING](#contributing)
-  - [CODE OF CONDUCT](#code-of-conduct)
+- [CONTRIBUCIONES](#contribuciones)
+  - [CODIGO DE CONDUCTA](#codigo-de-conducta)
 - [LICENCIA](#licencia)
   - [LIMITACION DE RESPONSABILIDADES](#limitacion-de-responsabilidades)
 - [VERSIONES](#versiones)
 
-### SYSTEM REQUIREMENTS
+### REQUISITOS DE SISTEMA
 
 | Sistema Operativo | Console            | Versión                            |  Espacio Disco | Soportado |
 | ----------------- | ------------------ | ---------------------------------- | -------------- | --------- |
@@ -51,11 +51,11 @@ para poder ejecutar un archivo realizaremos el siguiente comando.
 
 **[Adrià Rigall](https://www.github.com/Rigui73)** - Autor Principal
 
-## CONTRIBUTING
+## CONTRIBUCIONES
 
 Lea [CONTRIBUTING.md](/CONTRIBUTING.md) para obtener detalles sobre nuestro proceso para enviarnos solicitudes de extracción.
 
-### CODE OF CONDUCT
+### CODIGO DE CONDUCTA
 
 Lea [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) para obtener detalles sobre nuestro código de conducta.
 

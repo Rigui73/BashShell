@@ -260,7 +260,7 @@ vim 8_infoValidate.sh
 ```
 
 ```bash
-#!/bin/bash/
+#!/bin/bash
 identificacionRegex='^[0-9]{10}$' # Número de Identificación de un tamaño de 10 números.
 paisRegex='^EC|COL|US$' # País de Origen denotado por dos letras en un rango específico.
 fechaNacimientoRegex='^19|20[0-0]{2}[1-12][1-31]$' # Fecha de Nacimiento en el formato yyyyMMDD.
@@ -288,31 +288,60 @@ vim 8_readValidate.sh
 ```
 
 ```bash
+#!/bin/bash
 option=0
 backupName=""
 clave=""
 
 echo "programa utilidades postgres"
-#acepta el ingreso de un solo caracter
-read -n1 -p "ingresar una opcion:" option
+read -n1 -p "ingresar una opcion:" option # acepta el ingreso de un solo caracter
 echo -e "\n"
 read -n10 -p "ingresar el nombre del archivo backup:" backupName
 echo -e "\n"
-read -s -p "Clave:" clave
+read -s -p "Clave:" clave # no se muestra los caracteres
 echo "Opción: $option , backupname: $backupName , Clave: \$clave"
 ```
 
 ## Video 15: Pasos de parametros y opciones
 
-envio de opciones vs parametros
-envio independiente
-envio complementario
-leer los valores
-
-## video 16: descarga informacion de internet
+```bash
+vim 9_options.sh
+```
 
 ```bash
-echo "descargar informacion de internet"
+#!/bin/bash
+echo "Programa opciones"
+echo "Opcion 1 enviada: $1"
+echo "Opcion 2 enviada: $2"
+echo "Opciones enviadas: $*"
+echo -e "\n"
+
+echo "Recuperar valores"
+while [ -n "$1" ]
+do
+case "$1" in
+  -a) echo "-a option utilizada";;
+  -b) echo "-b option utilizada";;
+  -c) echo "-c option utilizada";;
+   *) echo "$! no es una opción";;
+esac
+shift
+done
+```
+
+> Nota: Si el argumento, coincide con el valor en paréntesis se ejecutará esa línea.
+
+## Video 16: Descarga información de internet
+
+```bash
+vim 10_download.sh
+```
+
+utilizamos el comando `wget` para descargar ficheros de internet.
+
+```bash
+#!/bin/bash
+echo "descargar información de internet"
 wget hhtps://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.zip
 ```
 
@@ -320,18 +349,79 @@ wget hhtps://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.
 
 > Solicitar la información de cada uno de ustedes como nombres, apellidos, edad, dirección y números telefónicos; y posterior imprima toda la información.
 
-## Video 18 i 19: If/Else
+## Video 18, 19 i 20: If/Else y Expresiones Condicionales
 
-Se utiliza (( $variable >= 18 ))
-Se utiliza [ $variable -le 18 ]
+Para la sentencia de IF/ELSE se puede utilizar la notación de expresiones regulares que van dentro de parentesis:
 
-## Video 20: Expresiones Condicionales
+Ejemplo: (( $variable >= 18 ))
 
-archivo.
+```bash
+notaClase=0
+edad=0
 
-## video 21: Sentencias Case
+echo "Ejemplo Sentencia If -else"
+read -n1 -p "indique cual es su nota (1-9): " notaClase
+echo -e "\n"
+if (( \$notaClase >= 7 )); then
+  echo "El alumno aprueba la materia"
+else
+  echo "El alumno reprueba la materia"
+fi
+```
 
-archivo.
+O la notación con greather than, etc que va dentro de claudators:
+
+Ejemplo: [ $variable -le 18 ]
+
+```bash
+notaClase=0
+edad=0
+
+read -p "Indique cual es su edad: " edad
+if [ $edad -le 18 ]; then
+  echo "La persona no puede sufragar"
+else
+  echo "La persona puede sufragar"
+fi
+```
+
+Una vez así se pueden anidar tantos IF/ELSE como queramos aunque es una mala práctica si son muy extensos.
+
+```bash
+edad=0
+echo "Ejemplo Sentencia If -else"
+
+read -p "Indique cual es su edad: " edad
+if [ $edad -le 18 ]; then
+  echo "La persona no puede sufragar"
+elif [ $edad -ge 19 ] && [ $edad -le 64 ]; then
+  echo "La persona es adulta"
+else
+  echo "La persona es adulto mayor"
+fi
+```
+
+## Video 21: Sentencias Case
+
+```bash
+vim 14_case.sh
+```
+
+```bash
+#!/bin/bash
+opcion=""
+
+echo "Ejemplo Sentencia Case"
+read -p "ingrese una opción de la A - Z: " opcion
+echo -e "\n"
+
+case $opcion in
+"A") echo -e "\nOperación Guardar Archivo";;
+"B") echo "Operación Eliminar Archivo";;
+[C-E]) echo "No esta implementada la operación";;
+"*") "Opción Incorrecta"
+esac
+```
 
 ## Video 22: RETO 3
 
