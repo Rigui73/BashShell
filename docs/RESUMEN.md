@@ -427,4 +427,187 @@ esac
 
 > Solicitar que se ingrese un valor del 1 al 5. Según el valor ingresado valor a validarlo utilizando las condicionales e imprimir según el valor ingresado. Construir expresiones de validaciòn númericas, cadenas y archivos según la opción ingresada.
 
-## Video 23: no se
+## Video 23: Arreglos
+
+Los arreglos son conjuntos de valores dentro de una variable.
+
+```bash
+vim 15_arreglos.sh
+```
+
+```bash
+#!/bin/bash
+arregloNumeros=(1 2 3 4 5 6) # numéricos
+arregloCadenas=(Marco, Antonio, Pedro, Susana) # alfanuméricos
+arregloRangos=({A..Z} {10..20}) # rangos
+
+echo ${arregloNumeros[*]} # Imprime todos los valores del arreglo.
+echo ${#arregloNumeros[*]} # imprime el tamaño del arreglo.
+echo ${arregloNumeros[3]} # Imprime la posición 3 del arreglo.
+
+arregloNumeros[7]=20 # Añadir valor en el arreglo.
+unset arregloNumeros[0] # Eliminar valor en el arreglo.
+```
+
+## Video 24: Sentencia for loop
+
+```bash
+vim 16_forLoop.sh
+```
+
+```bash
+#!/bin/bash
+arregloNumeros=(1 2 3 4 5 6)
+
+# Iterar en la lista de Números
+for num in ${arregloNumeros[*]}
+do
+  echo "Número: $num"
+done
+
+# Iterar en la lista de Cadenas
+for nom in "marco" "Pedro" "Luis" "Daniela"
+do
+echo "Número: $nom"
+done
+
+# Iterar en Archivos
+for fil in *
+do
+echo "Nombre archivo: $fil"
+done
+
+# Iterar utilizando un comando
+for fil in $(ls)
+do
+  echo "Nombre archivo: $fil"
+done
+
+# Iterar utilizando el formato tradicional
+for ((i=1; i<10; i++))
+do
+echo "Número: $i"
+done
+```
+
+## Video 25: Sentencia while loop
+
+```bash
+vim 17_whileLoop.sh
+```
+
+```bash
+#!/bin/bash
+numero=1
+
+while [ $numero -ne 10 ]
+do
+echo "Imprimiendo $numero veces"
+  numero=$((numero + 1))
+done
+```
+
+## Video 26: loop Anidados
+
+```bash
+vim 18_loopsAnidados.sh
+```
+
+```bash
+#!/bin/bash
+for fil in $(ls)
+do
+  for nombre in {1..4}
+  do
+    echo "Nombre archivo: $fil _ $nombre"
+  done
+done
+```
+
+## Video 27: Break y continue
+
+- `Break` Rompe el Loop.
+- `Continue` Salta a la siguiente iteración.
+
+```bash
+vim 19_breakContinue.sh
+```
+
+```bash
+#!/bin/bash
+for fil in $(ls)
+do
+  for nombre in {1..4}
+  do
+    if [ $fil = "10*download.sh" ]; then
+      break; # si se valida, rompe la ejecucón.
+    elif [[ $fil == 4* ]]; then
+      continue; # si se valida, salta a la otra sentencia.
+    else
+      echo "Nombre archivo: $fil _ $nombre"
+    fi
+  done
+done
+```
+
+## Video 28: Menu de Opciones
+
+```bash
+vim 10_menuOpciones.sh
+```
+
+```bash
+#!/bin/bash
+opcion=0
+
+while :
+do
+  clear # Limpiar la pantalla
+  echo "-----------------------------------------"
+  echo " MENU PRINCIPAL "
+  echo "-----------------------------------------"
+  echo "1. Instalar Postgres"
+  echo "2. Desinstalar Postgres"
+
+  read -n1 -p "Ingrese una opción [1-5]:" opcion
+
+  case $opcion in
+  1) echo -e "\nInstalar postgres..."
+  2) echo -e "\nDesinstalar postgres..."
+  esac
+done
+```
+
+## Video 29: RETO 4
+
+> Lanzar un menú con las opciones: Procesos Actuales, Memoria Disponible, Espacio en Disco, Información de Red, Variables de Entorno Configuradas, Información Programa, Backup información, Ingrese una opción. Posterior a esto vamos a recuperar la opción ingresada, validarla e imprimir la opción y el título de acuerdo a lo ingresado
+
+## Video 30: Archivos y Directorios
+
+## Video 31: Escribir dentro de archivos
+
+## Video 32: Leer Archivos
+
+## Video 33: Operaciones Archivos
+
+## Video 34: RETO 5
+
+## Video 35: Empaquetamiento
+
+(TAR, GZIP, PBZIP 2)
+
+## Video 36: Respaldo Empaquetado con clave
+
+## Vidoe 37: transferir información red
+
+## Video 38: RETO 6
+
+## Video 39: Crear funciones y paso de argumentos
+
+## Video 40: Funciones de instalar y desinstalar postgres
+
+## Video 41: Funciones sacar y restaurar respaldos en postgres
+
+## Video 42: RETO 7
+
+## Video 43: Cierre

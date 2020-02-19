@@ -1,10 +1,10 @@
 <p align="center">
   <img src="./docs/images/bash-logo.png"><br>
   <b>Programación en Bash Shell.</b><br><br>
-  <img src="https://img.shields.io/badge/status-success-success" alt="build-status">
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
-  <img src="https://img.shields.io/badge/version-0.5-orange" alt="tag-version">
-  <img src="https://img.shields.io/badge/updated-february 2020-blue" alt="last-updated">
+  <img src="https://img.shields.io/badge/estado-success-success" alt="build-status">
+  <img src="https://img.shields.io/badge/licencia-MIT-blue" alt="license">
+  <img src="https://img.shields.io/badge/version-v0.5-orange" alt="tag-version">
+  <img src="https://img.shields.io/badge/updated-febrero 2020-blue" alt="last-updated">
 </p>
 
 ## DESCRIPCION
