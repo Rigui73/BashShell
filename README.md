@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/licencia-MIT-blue" alt="license">
   <img src="https://img.shields.io/badge/version-v0.5-orange" alt="tag-version">
   <img src="https://img.shields.io/badge/updated-febrero 2020-blue" alt="last-updated">
+  <img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor-Covenant">
 </p>
 
 ## DESCRIPCION
@@ -53,11 +54,11 @@ para poder ejecutar un archivo realizaremos el siguiente comando.
 
 ## CONTRIBUCIONES
 
-Lea [CONTRIBUTING.md](/CONTRIBUTING.md) para obtener detalles sobre nuestro proceso para enviarnos solicitudes de extracción.
+Lea [CONTRIBUTING.md](/.github/CONTRIBUTING.md) para obtener detalles sobre nuestro proceso para enviarnos solicitudes de extracción.
 
 ### CODIGO DE CONDUCTA
 
-Lea [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) para obtener detalles sobre nuestro código de conducta.
+Lea [CODE_OF_CONDUCT.md](/.github/CODE_OF_CONDUCT.md) para obtener detalles sobre nuestro código de conducta.
 
 ## LICENCIA
 

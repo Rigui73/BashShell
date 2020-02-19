@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 # Description: Programa para ejemplificar como se realiza el paso de opcioiones con/sin parametros
 # Author: Adria Rigall - @rigui73
 
