@@ -584,13 +584,85 @@ done
 
 ## Video 30: Archivos y Directorios
 
+```bash
+./21_archivosDirectorios.sh "d" nombreCarpeta
+```
+
+```bash
+#!/bin/bash
+if [ $1 = "d" ]; then
+mkdir -m 755 $2
+  echo "Directorio Creado Correctamente."
+  ls -la $2
+elif [ $1 = "f" ]; then
+touch $2
+  echo "Archivo Creado Correctamente."
+  ls -la $2
+else
+echo "No existe esa opción: $1"
+fi
+```
+
 ## Video 31: Escribir dentro de archivos
+
+```bash
+./22_writeFile.sh prueba.txt "Valores escritos con el comando cat"
+```
+
+Hay dos maneras para escribir dentro de un archivo:
+
+```bash
+#!/bin/bash
+# UTILIZANDO ECHO
+echo "Valores escritos con el comando echo" >> $1
+
+# UTILIZANDO CAT
+cat <<EOM >> $1
+$2
+EOM
+```
 
 ## Video 32: Leer Archivos
 
+```bash
+./23_readFile.sh prueba.txt
+```
+
+```bash
+#!/bin/bash
+cat $1 # ejecutando el comando cat.
+
+valorCat= cat $1 # Almacenar los valores en una variable.
+echo "$valorCat"
+
+while read linea # Leer archivos linea por linea utilizando while.
+do
+  echo "$linea"
+done < $1
+
+while IFS= read linea # la variable IFS (Internal Field Separator) no recorta espacios en blanco.
+do
+echo "$linea"
+done < $1
+```
+
 ## Video 33: Operaciones Archivos
 
+```bash
+vim 24_operacionesArchivos.sh
+```
+
+```bash
+#!/bin/bash
+mkdir -m 755 backupsScripts/ # creamos directorio
+cp *.* backupsScripts/ # copiamos directorio actual al nuevo
+ls -la backupsScripts/ # listamos el contenido
+mv backupsScripts/ $HOME # movemos al HOME
+```
+
 ## Video 34: RETO 5
+
+> Modificar el archivo utilityHost.sh para escribir la información solicitada a un archivo de log cuyo nombre será log donde yyyy representa el año, MM el mes, DD el día, HH la hora, mm los minutos y SS los segundos
 
 ## Video 35: Empaquetamiento
 
