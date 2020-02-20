@@ -1,116 +1,234 @@
 # Novedades de actualizaciones
 
-Unreleased
-1.0.0 - 2017-06-20
-Added
-New visual identity by @tylerfortune8.
-Version navigation.
-Links to latest released version in previous versions.
-"Why keep a changelog?" section.
-"Who needs a changelog?" section.
-"How do I make a changelog?" section.
-"Frequently Asked Questions" section.
-New "Guiding Principles" sub-section to "How do I make a changelog?".
-Simplified and Traditional Chinese translations from @tianshuo.
-German translation from @mpbzh & @Art4.
-Italian translation from @azkidenz.
-Swedish translation from @magol.
-Turkish translation from @karalamalar.
-French translation from @zapashcanon.
-Brazilian Portugese translation from @Webysther.
-Polish translation from @amielucha & @m-aciek.
-Russian translation from @aishek.
-Czech translation from @h4vry.
-Slovak translation from @jkostolansky.
-Korean translation from @pierceh89.
-Croatian translation from @porx.
-Persian translation from @Hameds.
-Ukrainian translation from @osadchyi-s.
-Changed
-Start using "changelog" over "change log" since it's the common usage.
-Start versioning based on the current English version at 0.3.0 to help translation authors keep things up-to-date.
-Rewrite "What makes unicorns cry?" section.
-Rewrite "Ignoring Deprecations" sub-section to clarify the ideal scenario.
-Improve "Commit log diffs" sub-section to further argument against them.
-Merge "Why can’t people just use a git log diff?" with "Commit log diffs"
-Fix typos in Simplified Chinese and Traditional Chinese translations.
-Fix typos in Brazilian Portuguese translation.
-Fix typos in Turkish translation.
-Fix typos in Czech translation.
-Fix typos in Swedish translation.
-Improve phrasing in French translation.
-Fix phrasing and spelling in German translation.
-Removed
-Section about "changelog" vs "CHANGELOG".
-0.3.0 - 2015-12-03
-Added
-RU translation from @aishek.
-pt-BR translation from @tallesl.
-es-ES translation from @ZeliosAriex.
-0.2.0 - 2015-10-06
-Changed
-Remove exclusionary mentions of "open source" since this project can benefit both "open" and "closed" source projects equally.
-0.1.0 - 2015-10-06
-Added
-Answer "Should you ever rewrite a change log?".
-Changed
-Improve argument against commit logs.
-Start following SemVer properly.
-0.0.8 - 2015-02-17
-Changed
-Update year to match in every README example.
-Reluctantly stop making fun of Brits only, since most of the world writes dates in a strange way.
-Fixed
-Fix typos in recent README changes.
-Update outdated unreleased diff link.
-0.0.7 - 2015-02-16
-Added
-Link, and make it obvious that date format is ISO 8601.
-Changed
-Clarified the section on "Is there a standard change log format?".
-Fixed
-Fix Markdown links to tag comparison URL with footnote-style links.
-0.0.6 - 2014-12-12
-Added
-README section on "yanked" releases.
-0.0.5 - 2014-08-09
-Added
-Markdown links to version tags on release headings.
-Unreleased section to gather unreleased changes and encourage note keeping prior to releases.
-0.0.4 - 2014-08-09
-Added
-Better explanation of the difference between the file ("CHANGELOG") and its function "the change log".
-Changed
-Refer to a "change log" instead of a "CHANGELOG" throughout the site to differentiate between the file and the purpose of the file — the logging of changes.
-Removed
-Remove empty sections from CHANGELOG, they occupy too much space and create too much noise in the file. People will have to assume that the missing sections were intentionally left out because they contained no notable changes.
-0.0.3 - 2014-08-09
-Added
-"Why should I care?" section mentioning The Changelog podcast.
-0.0.2 - 2014-07-10
-Added
-Explanation of the recommended reverse chronological release ordering.
-0.0.1 - 2014-05-31
-Added
-This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
-CNAME file to enable GitHub Pages custom domain
-README now contains answers to common questions about CHANGELOGs
-Good examples and basic guidelines, including proper date formatting.
-Counter-examples: "What makes unicorns cry?"
+## [Unreleased]
 
-1f83ae0 (HEAD -> master, origin/master, origin/HEAD) Añadido el fichero de clase 12 que faltaba
-1c68368 Clases acabadas hasta el RETO 3
-062d3fb Arreglar conflictos con los dos commits
-5166280 Añadir los recursos de argumentos
-2c926d3 Agregando mas clases
-3209549 Commit resguardado.
-214a0ae Añadimos algunas correcciones en README.md y nuevas prácticas.
-1a669b8 añadimos más archivos de prácticas.
-f93649c Añadir los apuntes y el primer archivo de Resources/.
-4cfcc7b Initial commit
+- Añadir el RETO 5.
+- Añadir el RETO 6.
+- Añadir el RETO 7.
+- Añadir las últimas clases del curso en Bash.
+- Reorganizar la estructura de directorios del proyecto a un estandard.
+- Corregir el fichero CHANGELOG.md
+- Corregir el fichero CONTRIBUTING.md
+- Renovar el fichero README.md
+- Corregir los ficheros para pull_request e issues.
 
-LINKS PARA MEJORAR LOS DOCS
-https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
+## [2.3.1] - Feb 20, 2020
 
-https://platzi.com/clases/1468-bash-shell/16970-expresiones-regulares/
-http://w3.unpocodetodo.info/utiles/regex.php
+### Fixed
+
+- Corregido - [CHANGELOG.md](/CHANGELOG.md) Se da por acabado el formato de archivo.
+- Corregido - [ideas.md](/docs/ideas.md) Se translada los apuntes de los links a un fichero a parte.
+
+## [2.3.0] - Feb 20, 2020
+
+### Added
+
+- Añadido - [conttemplate](/conttemplate) Se añaden las templates para contributing.
+
+### Fixed
+
+- Corregido - [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) Se vuelve a mover el fichero a /.
+- Corregido - [CONTRIBUTING.md](/CONTRIBUTING.md) Se vuelve a mover el fichero a /.
+- Corregido - [LICENSE](/LICENSE) Se corrige la licencia al año actual.
+
+## [2.2.1] - Feb 19, 2020
+
+### Fixed
+
+- Corregido - [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) Se da por acabado el formato de archivo.
+- Corregido - [CONTRIBUTING.md](/CONTRIBUTING.md) Se cambia de sitio el fichero.
+- Corregido - [README.md](/README.md) Se corrige los links de los archivos.
+- Corregido - [10_download.sh](/resources/10_download.sh) Se corrige el permiso de ejecución.
+
+## [2.2.0] - Feb 19, 2020
+
+### Added
+
+- Añadido - [21_archivosDirectorios.sh](/resources/21_archivosDirectorios.sh).
+- Añadido - [22_writeFile.sh](/resources/22_writeFile.sh).
+- Añadido - [23_readFile.sh](/resources/23_readFile.sh).
+- Añadido - [24_operacionesArchivo.sh](/resources/24_operacionesArchivo.sh).
+
+### Changed
+
+- Cambios - [RESUME.md](/docs/RESUMEN.md) Se añade la explicación de los videos 30 al 35.
+
+## [2.1.0] - Feb 19, 2020
+
+### Added
+
+- Añadido - [challenge4.sh](/challenges/challenge4.sh).
+- Añadido - [15_arreglos.sh](/resources/15_arreglos.sh).
+- Añadido - [16_forLoop.sh](/resources/16_forLoop.sh).
+- Añadido - [17_whileLoop.sh](/resources/17_whileLoop.sh).
+- Añadido - [18_loopsAnidados.sh](/resources/18_loopsAnidados.sh).
+- Añadido - [19_breakContinue.sh](/resources/19_breakContinue.sh).
+- Añadido - [20_menuOpciones.sh](/resources/20_menuOpciones.sh).
+
+### Changed
+
+- Cambios - [RESUME.md](/docs/RESUMEN.md) Se añade la explicación de los videos 23 al 29.
+- Cambios - [CHANGELOG.md](/CHANGELOG.md) Se añaden link de posibles apuntes futuros del proyecto.
+
+### Fixed
+
+- Corregido - [README.md](/README.md) Se modifican los shields principales.
+
+## [2.0.1] - Feb 18, 2020
+
+### Fixed
+
+- Corregido - [RESUME.md](/docs/RESUMEN.md) Se corrigen varios errores de syntaxis y se añade la explicación de los videos 20 al 22.
+- Corregido - [README.md](/README.md) Se corrige la "Tabla de Contenido" y sus respectivos links.
+
+## [2.0.0] - Feb 18, 2020
+
+Se modifica el proyecto para aceptar la contribución de otras personas.
+
+### Added
+
+- Añadido - [.mailmap](/.mailmap).
+- Añadido - [AUTHORS](/AUTHORS).
+- Añadido - [CHANGELOG.md](/CHANGELOG.md).
+- Añadido - [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
+- Añadido - [CONTRIBUTING.md](/CONTRIBUTING.md).
+- Añadido - [RESUMEN.md](/docs/RESUMEN.md).
+- Añadida - [bash-logo.png](/docs/images/bash-logo.png).
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se reconfigura el contenido al formato estandard para GitHub.
+
+## [1.8.0] - Feb 17, 2020
+
+### Added
+
+- Añadido - [8_readValidate.sh](/resources/8_readValidate.sh).
+
+## [1.7.0] - Dec 20, 2019
+
+### Added
+
+- Añadido - [challenge3.sh](/challenges/challenge3.sh).
+- Añadido - [13_expresionesCondicionales.sh](/resources/13_expresionesCondicionales.sh).
+- Añadido - [14_case.sh](resources/14_case.sh).
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se corrige la explicación del video 19.
+
+### Fixed
+
+- Corregido - [12_ifAnidados.sh](/resources/12_ifAnidados.sh) Se cambia la expresión regular de las funciones de () a [].
+
+## [1.6.1] - Dec 20, 2019
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se corrige la explicación del video 18.
+
+## [1.6.0] - Dec 20, 2019
+
+- Añadido - [challenge2.sh](/challenges/challenge2.sh).
+- Añadido - [8_infoValidate.sh](/resources/8_infoValidate.sh).
+- Añadido - [9_options.sh](/resources/9_options.sh).
+- Añadido - [10_download.sh](/resources/10_download.sh).
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se añade la explicación de los videos 13 al 17.
+
+### Fixed
+
+Se corrige la descripción del los siguientes ficheros al estandard.
+
+- Corregido - [1_utilityPostgres.sh](/resources/1_utilityPostgres.sh).
+- Corregido - [2_variables.sh](resources/2_variables.sh).
+- Corregido - [2_variables_2.sh](/resources/2_variables_2.sh).
+- Corregido - [3_tipoOperadores.sh](/resources/3_tipoOperadores.sh).
+- Corregido - [4_argumentos.sh](/resources/3_tipoOperadores.sh).
+- Corregido - [5_substitucionComand](resources/5_substitucionComand.sh).
+- Corregido - [6_readEcho.sh](resources/6_readEcho.sh).
+- Corregido - [7_read.sh](resources/7_read.sh).
+
+## [1.5.0] - Dec 20, 2019
+
+### Added
+
+- Añadido - [11_ifIlse.sh](/resources/11_ifElse.sh).
+- Añadido - [11_ifElseIfElse.sh](/resources/11_ifElseIfElse.sh).
+- Añadido - [12_ifAnidados.sh](/resources/12_ifAnidados.sh).
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se añade la explicación de los videos 18 y 19.
+
+## [1.4.0] - Dec 19, 2019
+
+### Added
+
+- Añadido - [utilityHost.sh](/challenges/utilityHost.sh).
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se añade la explicación de los resources/ añadidos.
+
+## [1.3.0] - Dec 19, 2019
+
+### Added
+
+- Añadido - [5_substitucionComand](resources/5_substitucionComand.sh).
+- Añadido - [6_readEcho.sh](resources/6_readEcho.sh).
+- Añadido - [7_read.sh](resources/7_read.sh).
+
+## [1.2.0] - Dec 19, 2019
+
+### Added
+
+- Añadido - [2_variables.sh](resources/2_variables.sh).
+- Añadido - [2_variables_2.sh](/resources/2_variables_2.sh).
+- Añadido - [3_tipoOperadores.sh](/resources/3_tipoOperadores.sh).
+- Añadido - [4_argumentos.sh](/resources/3_tipoOperadores.sh).
+
+### Fixed
+
+- Corregido - [1_utilityPostgres.sh](/resources/1_utilityPostgres.sh) Se corrige el contacto del Author.
+
+## [1.1.0] - Dec 19, 2019
+
+### Added
+
+- Añadido - [1_utilityPostgres.sh](/resources/1_utilityPostgres.sh).
+
+### Changed
+
+- Cambios - [README.md](/README.md) Se añade la explicación de los primeros 12 videos.
+
+## [1.0.0] - Dec 19, 2019
+
+### Added
+
+- Añadido - [README.md](/README.md).
+- Añadido - [LICENSE MIT](/LICENSE).
+
+## Atribución
+
+El formato esta basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), y este proyecto contiene el [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+[Unreleased]: https://github.com/Rigui73/BashShell/compare/master...HEAD
+[1.0.0]: https://github.com/
+[1.1.0]: https://github.com/
+[1.2.0]: https://github.com/
+[1.3.0]: https://github.com/
+[1.4.0]: https://github.com/
+[1.5.0]: https://github.com/
+[1.6.0]: https://github.com/
+[1.6.1]: https://github.com/
+[1.7.0]: https://github.com/
+[1.8.0]: https://github.com/
+[2.0.0]: https://github.com/
+[2.0.1]: https://github.com/
+[2.1.0]: https://github.com/
+[2.2.0]: https://github.com/
+[2.2.1]: https://github.com/
+[2.3.0]: https://github.com/
