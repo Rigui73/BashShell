@@ -6,16 +6,17 @@
   <img src="https://img.shields.io/badge/version-v0.5-orange" alt="tag-version">
   <img src="https://img.shields.io/badge/updated-febrero 2020-blue" alt="last-updated">
   <img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor-Covenant">
+  <img alt="Discord" src="https://img.shields.io/discord/680332596693172234?color=blue&logo=discord&logoColor=white">
 </p>
 
 ## DESCRIPCION
 
 Este directorio me sirve para practicar la programación en Bash Shell. He abierto un nuevo apartado en docs/ para poder documentar cada proceso de programación y apuntes para nuevos proyectos que utilize esta plataforma.
 
-## TABLA DE CONTENIDO
+#### TABLA DE CONTENIDO
 
 - [DESCRIPCION](#descripcion)
-- [TABLA DE CONTENIDO](#tabla-de-contenido)
+    - [TABLA DE CONTENIDO](#tabla-de-contenido)
   - [REQUISITOS DE SISTEMA](#requisitos-de-sistema)
 - [TEST](#test)
   - [SCREENSHOTS](#screenshots)

@@ -33,3 +33,14 @@ Incluya tareas específicas en el orden en que deben realizarse. Incluya enlaces
 - [ ] Tarea 1
 - [ ] Tarea 2
 - [ ] Tarea 3
+
+Incluso puede incluir una plantilla para que las personas puedan simplemente copiar y pegar (nuevamente, menos trabajo para usted).
+
+> Al presentar un problema, asegúrese de responder estas cinco preguntas:
+>
+> 1. ¿Qué versión de Go está utilizando (versión go)?
+> 2. ¿Qué sistema operativo y arquitectura de procesador está utilizando?
+> 3. ¿Qué hiciste?
+> 4. ¿Qué esperabas ver?
+> 5. ¿Qué viste en su lugar?
+>    Las preguntas generales deben ir a la lista de correo de golang-nuts en lugar del rastreador de problemas. Los Gophers responderán o le pedirán que presente un problema si se ha tropezado con un error.

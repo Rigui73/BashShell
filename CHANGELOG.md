@@ -7,10 +7,22 @@
 - Añadir el RETO 7.
 - Añadir las últimas clases del curso en Bash.
 - Reorganizar la estructura de directorios del proyecto a un estandard.
-- Corregir el fichero CHANGELOG.md
 - Corregir el fichero CONTRIBUTING.md
 - Renovar el fichero README.md
 - Corregir los ficheros para pull_request e issues.
+
+## [2.4.1] - Feb 21, 2020
+
+### Fixed
+
+- Corregido - [CONTRIBUTING.md](/CONTRIBUTING.md) Se da por acabado el formato de archivo.
+
+## [2.4.0] - Feb 20, 2020
+
+### Added
+
+- Añadido - [ISSUE_TEMPLATE.md](/.github/ISSUE_TEMPLATE/issue.template.md).
+- Añadido - [PULL_REQUEST_TEMPLATE.md](/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md).
 
 ## [2.3.1] - Feb 20, 2020
 
@@ -232,3 +244,6 @@ El formato esta basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0
 [2.2.0]: https://github.com/
 [2.2.1]: https://github.com/
 [2.3.0]: https://github.com/
+[2.3.1]: https://github.com/
+[2.4.0]: https://github.com/
+[2.4.1]: https://github.com/
