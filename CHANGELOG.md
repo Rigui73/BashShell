@@ -11,6 +11,12 @@
 - Renovar el fichero README.md
 - Corregir los ficheros para pull_request e issues.
 
+## [2.4.2] - Feb 21, 2020
+
+### Fixed
+
+- Corregido - [ISSUE_TEMPLATE/](/.github/ISSUE_TEMPLATE/) y [PULL_REQUEST_TEMPLATE/](/.github/PULL_REQUEST_TEMPLATE/) Editado al Español y adaptación al proyecto.
+
 ## [2.4.1] - Feb 21, 2020
 
 ### Fixed

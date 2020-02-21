@@ -62,7 +62,7 @@ En este punto, ¡estás listo para hacer tus cambios! Siéntase libre de pedir a
 
 ### Obtén el estilo correcto
 
-Su aportación debe seguir las mismas guias de estilo como el resto del proyecto. Puede verificar y corregir problemas de estilo ejecutando cada linter individualmente. Ejecute `bin / rake -T lint` para ver las linters disponibles.
+Su aportación debe seguir las mismas guias de estilo como el resto del proyecto. Puede verificar y corregir problemas de estilo ejecutando cada linter individualmente. Ejecute `bin / rake -T lint` para ver las linters disponibles. Formatea tu código con [Prettier](https://github.com/prettier/prettier).
 
 ### Agregar una entrada de registro de cambios
 

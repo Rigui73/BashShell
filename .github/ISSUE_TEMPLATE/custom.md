@@ -1,6 +1,6 @@
 ---
 name: Custom issue template
-about: Describe this issue template's purpose here.
+about: Describa el propósito de esta plantilla de problema aquí.
 title: ''
 labels: ''
 assignees: ''

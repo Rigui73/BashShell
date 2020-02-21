@@ -1,60 +1,39 @@
-# Description
+# Descripción
 
-Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
+Incluya un resumen del cambio y qué problema se solucionó. Incluya también la motivación y el contexto relevantes. Enumere las dependencias que se requieren para este cambio.
 
 Fixes # (issue)
 
-## Type of change
+## Tipo de cambio
 
-Please delete options that are not relevant.
+> Please delete options that are not relevant.
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+- [ ] Solución de error (cambio continuo que soluciona un problema)
+- [ ] Nueva función (cambio sin interrupciones que agrega funcionalidad)
+- [ ] Cambio de última hora (corrección o característica que causaría que la funcionalidad existente no funcione como se esperaba)
+- [ ] Este cambio requiere una actualización de la documentación
 
-# How Has This Been Tested?
+## Entorno de Desarrollo
 
-Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
+Describa las pruebas que realizó para verificar sus cambios. Proporcione instrucciones para que podamos reproducir. Enumere también todos los detalles relevantes para su configuración de prueba.
 
-- [ ] Test A
-- [ ] Test B
+- [ ] Prueba A
+- [ ] Prueba B
 
-**Test Configuration**:
+**Configuración de prueba**:
 
-- Firmware version:
+- Versión de firmware:
 - Hardware:
-- Toolchain:
+- Cadena de herramientas:
 - SDK:
 
-# Checklist:
+## Lista de Verificación
 
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
-
-
-
-# Pull Request
-
-Antes de enviar una solicitud de "pull request", \*\* asegúrese de hacer lo siguiente:
-
-1. "Fork" del [repositorio](https://github.com/Rigui73/Riguipedia) y crea tu rama desde `master`.
-2. Si ha solucionado un error o código agregado que debería probarse, ¡agregue pruebas!
-3. Formatea tu código con [Prettier](https://github.com/prettier/prettier).
-4. Asegúrate de que tu código esté limpio.
-
-## Propuesta
-
-_Describe el problema o funcionalidad que has añadido al repositorio y el link al Issue que has creado_
-
-## Descripción de la mejora
-
-_Describe qué has cambiado en el código y por qué eso mejora la herramienta_
-
-_Links a entradas de blogs, librerías o recursos que has utilizado_
+- [ ] Mi código sigue las pautas de estilo de este proyecto
+- [ ] He realizado una auto-revisión de mi propio código
+- [ ] He comentado mi código, particularmente en áreas difíciles de entender
+- [ ] He realizado los cambios correspondientes a la documentación
+- [ ] Mis cambios no generan nuevas advertencias
+- [ ] He agregado pruebas que prueban que mi solución es efectiva o que mi función funciona
+- [ ] Las pruebas unitarias nuevas y existentes pasan localmente con mis cambios
+- [ ] Cualquier cambio dependiente se ha fusionado y publicado en módulos posteriores
