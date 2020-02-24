@@ -666,20 +666,149 @@ mv backupsScripts/ $HOME # movemos al HOME
 
 ## Video 35: Empaquetamiento
 
+```bash
 (TAR, GZIP, PBZIP 2)
+tar -cvf shellCourse.tar \*.sh
+
+gzip shellCourse.tar
+echo "Empaquetar un solo archivo. con un ratio 9"
+gzip -9 9_options.sh
+pbzip2 -f shellCourse.tar
+
+echo "Empaquetar un directorio con tar y pbzip2"
+tar -cf *.sh -e > shellCourseDos.tar.bz2
+```
 
 ## Video 36: Respaldo Empaquetado con clave
 
-## Vidoe 37: transferir información red
+```bash
+zip -e shellCourse.zip
+
+unzip shellCourse.zip
+```
+
+## Vidoe 37: Transferir información red
+
+```bash
+host=""
+usuario=""
+
+read -p "ingresar el host:" host
+read -p "ingresar el usuario:" usuario
+
+echo -e "\nEn este momento se procederá a empaquetar la carpeta y transferencia segun los datos ingresados"
+
+rsync -avz $(pwd) $usuario@\$host:/f/PRACTICAS/BashShell/resources
+```
 
 ## Video 38: RETO 6
 
+> Modificar programa utilityHost. sh para empaquetar los logs generados utilizando algún formato de compresión, colocarle una clave y pasarlo a otra máquina a través de SSH, cuando se seleccione la opción 7. Backup de Información
+
 ## Video 39: Crear funciones y paso de argumentos
+
+```bash
+sacar_respaldo () {
+echo "sacar respaldo..."
+echo "Directorio Backup: \$1"
+}
+
+read -p "Directorio Backup:" directorioBackup
+sacar_respaldo $directorioBackup
+sleep 3
+;;
+```
 
 ## Video 40: Funciones de instalar y desinstalar postgres
 
+```bash
+instalar_postgres () {
+echo -e "\nVerificar instalación postgres..."
+verifyInstall=$(which psql)
+  if [ $? -eq 0 ]; then
+echo -e "\n Postgres ya e encuentra instalado en el equipo"
+else
+read -s -p "Ingresar contraseña de sudo:" password
+read -s -p "Ingresar contraseña a utilizar en postgres:" passwordPostgres
+echo "$password" | sudo -S apt update
+    echo "$password" | sudo -S apt-get -y install postgresql postgresql-contrib
+sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '{$passwordPostgres}';"
+    echo "$password" | sudo -S systemctl enable postgresql.service
+echo "\$password" | sudo -S systemctl start postgresql.service
+fi
+read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
+}
+
+# Función para desintalar postgres
+
+desinstalar_postgres () {
+read -s -p "Ingresar contraseña de sudo:" password
+echo -e "\n"
+echo "$password" | sudo -S systemctl stop postgresql.service
+  echo "$password" | sudo -S apt-get -y --purge revome postgresql\*
+echo "$password" | sudo -S rm -r /etc/postgresql
+  echo "$password" | sudo -S rm -r /etc/postgresql-common
+echo "$password" | sudo -S rm -r /var/lib/postgresql
+  echo "$password" | sudo -S userdel -r postgres
+echo "\$password" | sudo -S groupdel postgresql
+read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
+}
+```
+
 ## Video 41: Funciones sacar y restaurar respaldos en postgres
+
+```bash
+# Función para sacar un respaldo
+
+sacar_respaldo () {
+echo "Listar las bases de datos"
+sudo -u postgres psql -c "\l"
+read -p "Elegir la base de datos a respaldar:" bddRespaldo
+echo -e "\n"
+
+if [ -d "$1" ]; then
+echo "Establecer permisos directorio"
+echo "$password" | sudo -S chmod 755 $1
+echo "Realizando respaldo..."
+sudo -u postgres pg_dump. -Fc $bddRespaldo > "$1/bddRespaldo$fechaActual.bak"
+    echo "Respaldo realizado correctamente en la ubicación: $/bddRespaldo$fechaActual.bak"
+  else
+    echo "El directorio $1 no existe"
+fi
+read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
+}
+
+# Función para restaurar un respaldo
+
+restaurar_respaldo () {
+echo "Listar respaldos"
+read -p "ingresar el directorio donde estan los rspaldos:" directorioBackup
+ls -la \$directorioBackup
+read -p "Elegir el respaldo a restaurar" respaldoRestaurar
+echo -e "\n"
+read -p "ingrese el nombre de la base de datos destino:" bddDestino
+
+# Verificar si la bdd existe
+
+verifyBdd=$(sudo -u postgres psql -lqt | cut-d \| -f 1 \ grep -wq $bddDestino)
+if [ $? -eq 0 ]; then
+echo "Restaurando en la bdd destino: $bddDestino"
+  else
+    sudo -u postgres psql -C "create database $bddDestino"
+fi
+
+if [ -f "$respadoRestaurar" ]; then
+echo "Restaurando respaldo..."
+sudo -u postgres pg_upgrade -Fc -d $bddDestino "$directorioBackup/$respaldoRestaurar"
+    echo "Lista la base de datos"
+    sudo -u postgres psql -c "\l"
+  else
+    echo "El respaldo $respaldoRestaurar no existe"
+fi
+read -n 1 -s -r -p "PRESIONE [ENTER] para continuar..."
+}
+```
 
 ## Video 42: RETO 7
 
-## Video 43: Cierre
+> Modificar nuestro programa utiliyHost.sh para crear cinco funciones de acuerdo al menú creado anteriormente y completarlo con lo visto en clases.

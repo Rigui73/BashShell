@@ -20,4 +20,3 @@ case "$1" in
 esac
 shift
 done
-
