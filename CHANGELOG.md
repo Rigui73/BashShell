@@ -5,11 +5,34 @@
 - Añadir el RETO 5.
 - Añadir el RETO 6.
 - Añadir el RETO 7.
-- Añadir las últimas clases del curso en Bash.
 - Reorganizar la estructura de directorios del proyecto a un estandard.
-- Corregir el fichero CONTRIBUTING.md
-- Renovar el fichero README.md
-- Corregir los ficheros para pull_request e issues.
+- Corregir los 'tag' del repositorio GitHub y los links del CHANGELOG.
+
+## [2.5.1] - Feb 25, 2020
+
+### Added
+
+- Añadido - [og-prog-bash-shell.png](./docs/images/og-prog-bash-shell.png)
+
+### Changed
+
+- Cambios - [README.md](./README.md) Se estandariza la parte inicial para markdown.
+
+## [2.5.0] - Feb 24, 2020
+
+### Added
+
+- Añadido - [25_tar.sh](./resources/25_tar.sh)
+- Añadido - [26_gzip.sh](./resources/26_gzip.sh)
+- Añadido - [27_pbzip2.sh](./resources/27_pbzip2.sh)
+- Añadido - [28_zipPassword.sh](./resources/28_zipPassword.sh)
+- Añadido - [29_packageSSH.sh](./resources/29_packageSSH.sh)
+- Añadido - [30_functionsArgs.sh](./resources/30_functionsArgs.sh)
+- Añadido - [31_installUninstallPostgres.sh](./resources/31_installUninstallPostgres.sh)
+- Añadido - [32_backupRestore.sh](./resources/32_backupRestore.sh)
+- Añadido - [9_options.sh.gz](./resources/9_options.sh.gz)
+- Añadido - [shellCourse.tar](./resources/shellCourse.tar)
+- Añadido - [shellCourseDos.tar.bz2](./resources/shellCourseDos.tar.bz2)
 
 ## [2.4.2] - Feb 21, 2020
 
@@ -253,3 +276,6 @@ El formato esta basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0
 [2.3.1]: https://github.com/
 [2.4.0]: https://github.com/
 [2.4.1]: https://github.com/
+[2.4.2]: https://github.com/
+[2.5.0]: https://github.com/
+[2.5.1]: https://github.com/
