@@ -1,6 +1,8 @@
 # Programación en Bash Shell
 
-![build-status](https://img.shields.io/badge/estado-success-success) ![license](https://img.shields.io/badge/licencia-MIT-blue) ![tag-version](https://img.shields.io/badge/version-v0.5-orange) ![last-updated](https://img.shields.io/badge/updated-febrero%202020-blue) ![Contributor-Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg) ![Discord](https://img.shields.io/discord/680332596693172234?color=blue&logo=discord&logoColor=white)
+![build-status](https://img.shields.io/badge/estado-success-success) ![last-updated](https://img.shields.io/github/last-commit/Rigui73/BashShell) ![tag-version](https://img.shields.io/github/v/tag/rigui73/bashshell) ![repo-size](https://img.shields.io/github/repo-size/Rigui73/BashShell) ![license](https://img.shields.io/github/license/Rigui73/bashshell) ![contributor-covenant](https://img.shields.io/badge/contributor%20covenant-v2.0%20adopted-ff69b4.svg)
+
+![issues](https://img.shields.io/github/issues/Rigui73/BashShell) ![issues-pr](https://img.shields.io/github/issues-pr/Rigui73/BashShell) ![discord](https://img.shields.io/discord/680332596693172234?color=blue&logo=discord&logoColor=white)
 
 ## Descripción
 

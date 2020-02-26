@@ -6,7 +6,21 @@
 - Añadir el RETO 6.
 - Añadir el RETO 7.
 - Reorganizar la estructura de directorios del proyecto a un estandard.
-- Corregir los 'tag' del repositorio GitHub y los links del CHANGELOG.
+- [CHANGELOG.md](./CHANGELOG.md) - Corregir los links.
+
+## [2.5.2] - Feb 26, 2020
+
+### Added
+
+- Añadido - ¡Se han añadido los 'TAG' en el sistema de versiones!
+
+### Fixed
+
+- Corergido - [README.md](./README.md) Se han corregidos los shields dinámicos.
+
+### Deleted
+
+- Eliminado - [bash-logo.png](./docs/images/bash-logo.png).
 
 ## [2.5.1] - Feb 25, 2020
 
@@ -33,8 +47,6 @@
 - Añadido - [9_options.sh.gz](./resources/9_options.sh.gz)
 - Añadido - [shellCourse.tar](./resources/shellCourse.tar)
 - Añadido - [shellCourseDos.tar.bz2](./resources/shellCourseDos.tar.bz2)
-
-## [2.4.2] - Feb 21, 2020
 
 ### Fixed
 
@@ -276,6 +288,6 @@ El formato esta basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0
 [2.3.1]: https://github.com/
 [2.4.0]: https://github.com/
 [2.4.1]: https://github.com/
-[2.4.2]: https://github.com/
 [2.5.0]: https://github.com/
 [2.5.1]: https://github.com/
+[2.5.2]: https://github.com/
