@@ -5,8 +5,19 @@
 - Añadir el RETO 5.
 - Añadir el RETO 6.
 - Añadir el RETO 7.
-- Reorganizar la estructura de directorios del proyecto a un estandard.
 - [CHANGELOG.md](./CHANGELOG.md) - Corregir los links.
+
+## [2.5.4] - Mar 10, 2020
+
+### Fixed
+
+- Corregido - Se ha corregido la estructura de carpetas del repositorio.
+
+## [2.5.3] - Mar 09, 2020
+
+### Fixed
+
+- Corregido - [README.md](./README.md) Se ha corregido el shield de Discord Chat.
 
 ## [2.5.2] - Feb 26, 2020
 
@@ -291,3 +302,5 @@ El formato esta basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0
 [2.5.0]: https://github.com/
 [2.5.1]: https://github.com/
 [2.5.2]: https://github.com/
+[2.5.3]: https://github.com/
+[2.5.4]: https://github.com/
